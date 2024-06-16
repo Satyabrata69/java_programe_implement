@@ -5,14 +5,16 @@ interface code{
 }
 class satya implements code{
     String name; double sal;
+    @override
     public void input(){
-        try (Scanner ac = new Scanner(System.in);) {
+        try(Scanner ac = new Scanner(System.in);){
             System.out.println("enter the name:");
             name=ac.nextLine();
             System.out.println("enter the salary:");
             sal=ac.nextDouble();
         }
     }    
+    @override
     public void output(){
     System.out.println(name+" "+sal);
     }    
